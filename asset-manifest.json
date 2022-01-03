@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/registration-form/static/css/main.073c9b0a.css",
-    "main.js": "/registration-form/static/js/main.0b5063e5.js",
-    "static/js/787.943c7707.chunk.js": "/registration-form/static/js/787.943c7707.chunk.js",
-    "static/media/logo.svg": "/registration-form/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/registration-form/static/css/main.e6c13ad2.css",
+    "main.js": "/registration-form/static/js/main.a975e5d8.js",
     "index.html": "/registration-form/index.html",
-    "main.073c9b0a.css.map": "/registration-form/static/css/main.073c9b0a.css.map",
-    "main.0b5063e5.js.map": "/registration-form/static/js/main.0b5063e5.js.map",
-    "787.943c7707.chunk.js.map": "/registration-form/static/js/787.943c7707.chunk.js.map"
+    "main.e6c13ad2.css.map": "/registration-form/static/css/main.e6c13ad2.css.map",
+    "main.a975e5d8.js.map": "/registration-form/static/js/main.a975e5d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.0b5063e5.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.a975e5d8.js"
   ]
 }
