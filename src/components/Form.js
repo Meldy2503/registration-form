@@ -1,5 +1,5 @@
-import React from 'react'
-import { useFormik} from 'formik'
+import React from 'react';
+import { useFormik} from 'formik';
 
 export default function Form() {
     
@@ -13,12 +13,19 @@ export default function Form() {
          }
      })
      console.log(formik.values)
+     const styles = {}
     return (
         <div className='container'>
-            <div className='container-sub1'>
-            <img className='image1' src="https://cdn.pixabay.com/photo/2020/09/17/18/05/people-5579977__340.png" alt="welcome-img" />
+            <div className='container-sub1'>  
+            <img className='image1' src="https://cdn.pixabay.com/photo/2020/09/17/18/05/people-5579977__340.png"        alt="welcome-img" />
             </div>
-            <div className='container-sub2'>
+          <div>
+          <div className='logo-container'>
+          <img className='logo' src={process.env.PUBLIC_URL + `/img3.png`} alt="logo" />  
+          <h2 className='header1'>Melexy Digital Services</h2>
+          </div>
+          <p className='header2'> Register to view our produts and services</p>
+
            <form>
                <input 
                    type="text"
@@ -60,7 +67,7 @@ export default function Form() {
                    onChange={formik.handleChange}
                 />
            </form>
-           </div>
+        </div>
         </div>
     )
 }
