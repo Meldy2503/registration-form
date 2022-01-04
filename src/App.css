@@ -1,13 +1,17 @@
 .container {
-    max-width: 75%;
+    width: 75%;
     background-color: #eee;
-    max-height: 90vh;
+    height: 80vh;
     margin: 0 auto;
-    margin-top: 5em;
     border-radius: 5px;
     box-shadow: 2px 4px 6px #000;
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
   
 }
 
@@ -16,43 +20,54 @@
   width: 100%;
   clip-path: polygon(0 0, 87% 0, 100% 100%, 0% 100%);
   background-color: #fc325b;
+  border-radius: 5px;
+  
 }
 
 .image1 {
   height: 500px;
-  width: 100%;
-  margin-left: -.5em;
+  width: 620px;
+  margin-top:3em;
+  
+}
+.container-sub2 {
+  text-align: center;
+
   
 }
 .logo-container{
   display: flex;
   align-items: center;
   margin-top: -1em;
+  margin-left: 3.5em;
+  
   
 }
 .logo{
-  background-color: transparent;
   width: 50px;
   height: 50px;
 }
 
 .header1 {
   color: #fd224e;
-  font-size: 2.2rem;
+  font-size: 2.35rem;
   font-family: 'PT Sans Narrow', sans-serif;
-  letter-spacing: .06rem;
+  letter-spacing: .2rem;
   text-shadow: 1px 2px 3px #000;
+  
 
 }
 .header2{
   color: #656466;
+  text-shadow: 0 1px 2px #999;
   font-size: 1.1rem;
-  margin-left: 5em;
-  margin-top: -.1em;
+  margin: 0 auto;
+  margin-top: .1em;
 }
 form {
-  margin-right: 4em;
+  margin-right: 2em;
   padding: .5em;
+  margin-top: 1em;
 }
 input {
   padding: 1em;
@@ -62,10 +77,29 @@ input {
   box-shadow: .5px 1px 2px #999;
   border-style: none;
   
-  
 }
 input:focus{
   outline: none;
   border-bottom: 3px solid #fd224e;
   
 }
+button {
+   background-color: #fd224e;
+   color: #fff;
+   box-shadow: .5px 1px 2px #000;
+   width: 200px;
+   font-size: 1.1rem;
+   margin-top: 2em;
+   padding: .5em;
+   border-radius: 4px;
+   border-style: none;
+   text-align: center;
+   
+   transition: all .2s linear ;
+}
+button:hover  {
+  background-color: #c5082e;
+  transform: translateY(3px);
+  
+}
+

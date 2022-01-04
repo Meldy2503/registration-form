@@ -1,5 +1,6 @@
 import React from 'react';
 import { useFormik} from 'formik';
+import * as Yup from 'yup'
 
 export default function Form() {
     
@@ -10,23 +11,31 @@ export default function Form() {
              email: "",
              password: "",
              confirmPassword: ""
+         },
+         validationSchema: Yup.object({
+             firstName: Yup.string().max(15, "Must be 15 characters or less").required("Required")
+         }),
+
+         onSubmit: (values) => {
+             console.log(values)
          }
      })
-     console.log(formik.values)
-     const styles = {}
+    
+
     return (
         <div className='container'>
             <div className='container-sub1'>  
             <img className='image1' src="https://cdn.pixabay.com/photo/2020/09/17/18/05/people-5579977__340.png"        alt="welcome-img" />
             </div>
-          <div>
-          <div className='logo-container'>
+        
+          <div className='container-sub2'>
+          <span className='logo-container'>   
           <img className='logo' src={process.env.PUBLIC_URL + `/img3.png`} alt="logo" />  
           <h2 className='header1'>Melexy Digital Services</h2>
-          </div>
+          </span>
           <p className='header2'> Register to view our produts and services</p>
 
-           <form>
+           <form onSubmit={formik.handleSubmit}>
                <input 
                    type="text"
                    placeholder='first name'
@@ -34,7 +43,7 @@ export default function Form() {
                    value={formik.values.firstName}
                    onChange={formik.handleChange}
               />
-              <br />
+              
                <input 
                    type="text"
                    placeholder='last name'
@@ -42,7 +51,7 @@ export default function Form() {
                    value={formik.values.lastName}
                    onChange={formik.handleChange}
                 />
-                <br />
+                
                <input 
                    type="email"
                    placeholder='email'
@@ -50,7 +59,7 @@ export default function Form() {
                    value={formik.values.email}
                    onChange={formik.handleChange}
                 />
-                <br />
+                
                 <input 
                    type="password"
                    placeholder='password'
@@ -58,7 +67,7 @@ export default function Form() {
                    value={formik.values.password}
                    onChange={formik.handleChange}
                 />
-                <br />
+            
                 <input 
                    type="password"
                    placeholder='confirm password'
@@ -66,8 +75,12 @@ export default function Form() {
                    value={formik.values.confirmPassword}
                    onChange={formik.handleChange}
                 />
+                <br />
+                <button type='submit'>Register</button>
+
            </form>
+           </div>
         </div>
-        </div>
+        
     )
 }
