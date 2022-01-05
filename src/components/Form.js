@@ -23,16 +23,18 @@ export default function Form() {
                             .email("enter a valid email address")
                             .required("Required"),
               password: Yup.string()
-                            .min(8, "password must be atleast 8 characters")
+                            .min(5, "password must be atleast 5 characters")
                             .required("Enter password"),
               confirmPassword: Yup.string()
                             .oneOf([Yup.ref("password"), null], "Password does not match")
                             .required("Confirm password"),
           }),
         
-         onSubmit: (values) => {
+         onSubmit: (values, {resetForm}) => {
              console.log(values);
+             resetForm()
          }
+        
      });
     
        
@@ -97,12 +99,4 @@ export default function Form() {
                        />
                         {formik.touched.confirmPassword && formik.errors.confirmPassword ? <p className='errors'>{formik.errors.confirmPassword}</p> : null}
                       <br />
-                      <button type='submit'>Register</button>
-                
-
-                 </form>
-             </div>
-        </div>
-        
-    )
-}
+                      <button type='submit' >Register</button>

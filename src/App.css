@@ -2,7 +2,7 @@
     width: 70%;
     background-color: #eee;
     background-image: linear-gradient(80deg, #fc325b 0%,#fc325a 42%, transparent 42%);
-    height: 85vh;
+    height: 90vh;
     margin: 0 auto;
     border-radius: .5em;
     box-shadow: .2em .3em .6em #000;
@@ -16,13 +16,13 @@
 
 @media only screen and (max-width: 900px) {
   .container {
+    width: 75%;
      background-image: linear-gradient(360deg, #fc325b 0%,#eee 70%);
   }
 }
 
 @media only screen and (min-width: 901px) and (max-width:1199px) {
   .container {
-     width: 75%;
      background-image: linear-gradient(100deg, #fc325b 0%,#eee 50%, transparent 25%);
   }
 }
@@ -80,6 +80,7 @@
   flex-direction: column;
   max-width: 500px;
   width: 100%;
+
 }
 
 .logo {
@@ -104,7 +105,7 @@
 
 @media only screen and (max-width: 350px) {
   .header1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: .1rem;
   }
 }
@@ -127,25 +128,25 @@
   color: #656466;
   text-shadow: 0 1px 2px #999;
   font-size: 1.1rem;
-   margin-top: .2em; 
+   margin-top: .1em; 
 }
 
 @media only screen and (max-width: 350px) {
   .header2 {
-    font-size: .8rem;
+    font-size: .6rem;
   
   }
 }
 @media only screen and (min-width: 351px) and (max-width: 900px){
   .header2 {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 }
 
 form {
   margin-right: .8em;
   padding: .5em;
-  margin-top: 1em;
+  margin-top: .4em;
 }
 
 input {
@@ -170,7 +171,7 @@ button {
    box-shadow: .5px 1px 2px #000;
    width: 200px;
    font-size: 1.1rem;
-   margin-top: 1em;
+   margin-top: .6em;
    padding: .5em;
    border-radius: 4px;
    border-style: none;
