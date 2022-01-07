@@ -1,35 +1,29 @@
 .container {
     width: 70%;
-    background-color: #eee;
-    background-image: linear-gradient(80deg, #fc325b 0%,#fc325a 42%, transparent 42%);
-    height: 90vh;
+    background-color: transparent;
+    height: 90%;
     margin: 0 auto;
     border-radius: .5em;
     box-shadow: .2em .3em .6em #000;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);   
 }
 
 @media only screen and (max-width: 900px) {
   .container {
-    width: 75%;
-     background-image: linear-gradient(360deg, #fc325b 0%,#eee 70%);
-  }
-}
-
-@media only screen and (min-width: 901px) and (max-width:1199px) {
-  .container {
-     background-image: linear-gradient(100deg, #fc325b 0%,#eee 50%, transparent 25%);
+     width: 75%;
+  
   }
 }
 
 .image1 {
   height: 350px;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   margin-top:1em;
   margin-left: -1em;
@@ -43,16 +37,19 @@
 
 @media only screen and (min-width: 901px) and (max-width:1199px) {
    .image1 {
-  width: 350px;
+  max-width: 350px;
   height: 300px;
   margin-top: -1em;
+
 }   
 }
 
 .container-sub2 {
   text-align: center;
   max-width: 500px; 
-  width: 100%; 
+  width: 100%;
+  
+ 
 }
 
 @media only screen and (max-width: 900px) {
@@ -60,6 +57,7 @@
     width: auto;
     margin: auto;
     text-align: center;
+
   }
 }
 
@@ -68,7 +66,7 @@
     width: auto;
     margin: auto;
     margin-left: -4em;
-    max-width: 500px;
+    max-width: 450px;
 }   
 }
 
@@ -125,8 +123,8 @@
 }
 
 .header2{
-  color: #656466;
-  text-shadow: 0 1px 2px #999;
+  color: #fff;
+  text-shadow: 0 1px 2px #000;
   font-size: 1.1rem;
    margin-top: .1em; 
 }
@@ -134,7 +132,6 @@
 @media only screen and (max-width: 350px) {
   .header2 {
     font-size: .6rem;
-  
   }
 }
 @media only screen and (min-width: 351px) and (max-width: 900px){
@@ -147,6 +144,8 @@ form {
   margin-right: .8em;
   padding: .5em;
   margin-top: .4em;
+  
+
 }
 
 input {
@@ -155,7 +154,7 @@ input {
   width: 100%;
   max-width: 400px;
   border-radius: 3px;
-  box-shadow: .5px 1px 2px #999;
+  box-shadow: .5px 1px 2px #000;
   border-style: none;
   font-size: 1rem;
 }
@@ -202,6 +201,5 @@ button:hover  {
 @media only screen and (max-width: 900px) {
   .errors {
     font-size: .7rem;
-    color: #9b0f0f;
   }
 }

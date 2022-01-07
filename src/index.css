@@ -1,3 +1,10 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
 *,
  *::before,
  *::after {
@@ -5,14 +12,14 @@
      margin: 0;
      box-sizing: border-box;
  }
+
  
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(45deg, #242423e1, #1b1b1ae1), url(https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+   background-image: linear-gradient(45deg, #242423ec, #1b1b1aec), url(https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 

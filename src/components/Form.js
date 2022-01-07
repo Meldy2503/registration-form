@@ -41,7 +41,7 @@ export default function Form() {
     return (
         <div className='container'>
             <div>  
-                  <img className='image1 responsive-image' src="https://cdn.pixabay.com/photo/2020/09/17/18/05/people-5579977__340.png" alt="welcome-img" />
+                  <img className='image1' src="https://cdn.pixabay.com/photo/2020/09/17/18/05/people-5579977__340.png" alt="welcome-img" />
             </div>
         
           <div className='container-sub2'>
@@ -50,7 +50,7 @@ export default function Form() {
                       <h2 className='header1'>Melexy Digital Services</h2>
                       <p className='header2'> Register to view our produts and services</p>
                 </span>
-          
+            
                 <form onSubmit={formik.handleSubmit}>
                       <input 
                           type="text"
@@ -100,3 +100,9 @@ export default function Form() {
                         {formik.touched.confirmPassword && formik.errors.confirmPassword ? <p className='errors'>{formik.errors.confirmPassword}</p> : null}
                       <br />
                       <button type='submit' >Register</button>
+                 </form>
+             </div>
+        </div>
+        
+    )
+}
