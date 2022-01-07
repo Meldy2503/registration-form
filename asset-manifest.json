@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/registration-form/static/css/main.878392b9.css",
+    "main.css": "/registration-form/static/css/main.1bd7b24b.css",
     "main.js": "/registration-form/static/js/main.40eae094.js",
     "index.html": "/registration-form/index.html",
-    "main.878392b9.css.map": "/registration-form/static/css/main.878392b9.css.map",
+    "main.1bd7b24b.css.map": "/registration-form/static/css/main.1bd7b24b.css.map",
     "main.40eae094.js.map": "/registration-form/static/js/main.40eae094.js.map"
   },
   "entrypoints": [
-    "static/css/main.878392b9.css",
+    "static/css/main.1bd7b24b.css",
     "static/js/main.40eae094.js"
   ]
 }
